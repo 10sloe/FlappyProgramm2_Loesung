@@ -1,6 +1,7 @@
 Vogel vogel;
 Roehre r1;
 Roehre r2;
+Boden b;
 
 boolean laufend = false;
 
@@ -10,6 +11,7 @@ void setup()
   vogel = new Vogel(50, 200);
   r1 = new Roehre(600,0);
   r2 = new Roehre(600,300);
+  b = new Boden(0,400);
 }
 
 void draw()
@@ -26,6 +28,10 @@ void draw()
     laufend = false;
   }
   if(vogel.kollisionMitFigur(r2))
+  {
+    laufend = false;
+  }
+  if(vogel.kollisionMitFigur(b))
   {
     laufend = false;
   }
