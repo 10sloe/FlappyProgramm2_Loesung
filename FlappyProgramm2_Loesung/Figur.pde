@@ -29,5 +29,9 @@ void setY(float y_)
 {
    y = y_;
 }
+void setVy(float vy_)
+{
+  vy = vy_;
+}
   
 }

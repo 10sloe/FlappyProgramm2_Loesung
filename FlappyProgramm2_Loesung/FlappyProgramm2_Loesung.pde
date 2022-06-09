@@ -47,10 +47,12 @@ void mouseClicked()
 {
   if (laufend == false)
   {
-    laufend = true;
+    
     vogel.setY(200);
+    vogel.setVy(0);
     r1.setX(600);
     r2.setX(600);
+    laufend = true;
   }
   else
   {
